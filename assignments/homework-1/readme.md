@@ -52,7 +52,7 @@ endfor
 
 As an illustration, the figure below shows an example of applying local thresholding.  The example uses the `median` as the metric for deciding the new value of a pixel.
 
-> Note that pixels at the edges, where the neighborhood is not a perfect fit, do not consider pixels out-of-bounds as part of the neighborhood.
+> Note that when calculating the neighborhood of pixels at the edges, where the neighborhood is not a perfect fit, we ignore all pixels that fall outside the boundaries of the image.  In the illustration below, this is the case of the pixel at position `[0,0]` highlighted in orange.
 
 ![Image Binarization](local-thresholding.jpg)
 
