@@ -1,13 +1,11 @@
 # Examples
 
-Here we provide a few examples that will be used by the autograder.  
-- Folder `./imgs` contains example images in common formats such as `png` or `jpg`.  
-- Folder `code` provides two python scripts to convert images between formats.
+Here we provide a few examples that will be used by the autograder. Folder `./imgs` contains a few sample images in common formats such as `png` or `jpg`.  
 
-> The instructions below assume that you have a working `python3` installation with the following packages installed: `numpy` and `Pillow`.  If you are using `CS50 IDE` read the section below.
+> The instructions below assume that you have a working `python3` installation with the following packages: `numpy` and `Pillow`.  If you are using `CS50 IDE` read the last section of this document.
 
 ## Converting images into the `img` format
-If you want to test your program with real world images, the first step to take is to convert the image into the `img` format required by your program.  This is the format where images are just grayscale images enconded as a matrix of numbers in text mode.  The script `any2img.py` can do this conversion for you.  In the example below, the script will convert `imgs/cow.png` into `imgs/cow.img`.
+If you want to test your program with real world images, the first step to take is to convert the image into the `img` format required by your program.  This is the format where images are just grayscale images encoded as a matrix of numbers in text mode.  The script `any2img.py` can do this conversion for you.  In the example below, the script will convert `imgs/cow.png` into `imgs/cow.img`.
 
 ```bash
 $ python3 any2img.py ./imgs/cow.png ./imgs/cow.img
