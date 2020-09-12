@@ -84,7 +84,7 @@ $ ./binarizer local cover.img cover_loc_15.img 15
 
 ### Image file format
 
-Each image is encoded as a matrix of pixel values.  Internally you can represent an image either as a bidimensional array, or as an unidimensional array and design your algorithms properly.  When loading or saving files, each image file must be a `text file` where pixels values are separated by a single whitespace, and organized in `n` rows and `m` columns (the image dimensions).  For example, here is one file with 10 rows and 8 columns.
+Each image is encoded as a matrix of pixel values where each pixel value is a grayscale intensity, basically an integer ranging from 0 to 255.  Lets call this format as the `img` format and use the extension `.img` for such files.  Within your program, you can represent an image either as a bidimensional array, or as an unidimensional array and design your algorithms properly.  When loading or saving images, each `img` file must be a `text file` where pixels values are separated by a single whitespace, and organized in `n` rows and `m` columns (the image dimensions).  For example, here is one file with 10 rows and 8 columns.  We prepared a few conversion scripts that can help you test your program with real-world examples, please refer to [this document](./examples).
 ```
 121 24 149 1 173 251 10 38 
 97 137 153 92 40 93 9 149 
@@ -101,7 +101,7 @@ Each image is encoded as a matrix of pixel values.  Internally you can represent
 
 ## Submission and Grading
 
-Your submission will be tested and graded by an autograder, for this reason it cannot be stressed enough that your program must *exactly* follow the specifications for input and output upon submission.  Please use `main.cpp ` as the single name for your program.  We expect you to design your own **functions** and **classes** to model this problem, and all should be within the same file.  Your program will be compiled with the following line:
+Your submission will be tested and graded by an autograder, for this reason it cannot be stressed enough that your program must *exactly* follow the specifications for input and output upon submission.  Please use `main.cpp` as the single name for your program.  We expect you to design your own **functions** and **classes** to model this problem, and all should be within the same file.  Your program will be compiled with the following line:
 
 ```bash
 $ g++ -std=c++11 -Wall main.cpp -o prog
