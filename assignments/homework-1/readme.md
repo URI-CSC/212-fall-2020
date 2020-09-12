@@ -5,16 +5,14 @@ The goal of this assignment is to provide a review of basic tasks using `C++`, s
 > If you need to post any of your actual source code on Piazza for any reason, **please** be sure to tag the post as being *visible to instructors only*, so that you don't inadvertently share code with others and violate class rules on *plagiarism*.
 
 ## Image Binarization
----
 
-In computer vision, *image binarization*, a.k.a. *thresholding* is the process of taking a grayscale image and converting it into a black and white image.  In grayscale images, every pixel represents an intensity (integer) value ranging 0 (black) to 255 (white).  In black and white images, every pixel is either 0 or 255.  Intensity refers to the brightness of a color, white is the brightest and therefore the most intense, black is the darkest and the least intense.  The figure below shows an example of image binarization:
+In computer vision, *image binarization*, a.k.a. *thresholding* is the process of taking a grayscale image and converting it into a black and white image.  In grayscale images, every pixel represents an intensity value ranging from 0 (black) to 255 (white).  In black and white images, every pixel is either 0 or 255.  Intensity refers to the brightness of a color, white is the brightest and therefore the most intense, black is the darkest and the least intense.  The figure below shows an example of image binarization:
 
 ![Image Binarization](binarization.jpg)
 
 ### Global Thresholding
----
 
-The process of image binarization can be done by comparing each pixel within the input image against a predefined threshold `T`, and deciding whether each individual pixel gets turned white or black .  Pixels whose intensity is less `T` become black, all others become white.  The algorithm below shows how to binarize an image.
+The process of image binarization can be done by comparing each pixel within the input image against a predefined threshold `T`, and deciding whether each individual pixel gets turned white or black .  Pixels whose intensity is less than `T` become black, all others become white.  The algorithm below shows how to binarize an image.
 
 ```text
 input: Image A (grayscale)
@@ -30,21 +28,20 @@ for each pixel A[i][j] in A do
 endfor
 ```
 
-The value of `T` can be provided by the user, or be automatically calculated by using an algorithm.  For example, `T` can be the average intensity, or the median of all pixels.  There are hundreds of different ways for calculating `T`, often involving statistical measures.  As you can imagine, the choice of `T` has strong implications on the quality of the final image, which is also dependant on the complexity of the image.  Some methods will work well only with certain images.
+The value of `T` can be automatically calculated by using a function.  For example, `T` can be the average intensity, or the median of all pixels.  There are hundreds of different ways for calculating `T`, often involving statistical measures.  As you can imagine, the choice of `T` has strong implications on the quality of the final image, which is also dependent on the complexity of the image.  Some methods will work well only with certain types of images.
 
 > For the purpose of this assignment, a global value of `T` must be calculated using the `median` value of all pixels in the input image
 
 ### Local Thresholding
----
 
-While global thresholding uses a constant threshold `T` for transforming each pixel in an image, the idea behind local thresholding is to transform pixels by only considering the surrounding area, i.e., the local neighborhood of pixels.  The neighborhood of a pixel `p` is a small matrix of dimensions `d x d` centered at `p`.  In this case, for each pixel in the image, we are basically calculating a different `T`.  The algorithm below shows how to binarize an image.
+While global thresholding uses a constant threshold `T` for transforming each pixel in an image, the idea behind local thresholding is to transform pixels by only considering the surrounding area, i.e., the **local neighborhood** of each pixel.  The neighborhood of a pixel `p` is a small matrix of dimensions `d x d` centered at `p`.  In this case, for each pixel in the image, we are basically calculating a different `T`.  The algorithm below shows how to binarize an image using local thresholding.
 
 ```text
 input: Image A (grayscale)
 output: Image B (black and white)
 
 for each pixel A[i][j] in A do
-    calculate T[i][j]
+    calculate T[i][j] using local neighborhood
     if A[i][j] < T[i][j] then
         B[i][j] = 0
     else
@@ -60,9 +57,8 @@ As an illustration, the figure below shows an example of applying local threshol
 ![Image Binarization](local-thresholding.jpg)
 
 ## Your Task
----
 
-Your goal in this assignment is to develop a command line tool that performs image binarization, given some options provided by the user of your tool. 
+Your goal in this assignment is to develop a command line tool that performs image binarization, given some options provided by the user. 
 
 ### Command Line Arguments
 
@@ -81,8 +77,8 @@ $ ./binarizer local cover.img cover_loc_7.img 7
 $ ./binarizer local cover.img cover_loc_15.img 15
 ```
 
-1. The value of `T` for global thresholding must be the `median` of all pixels
-2. The value of `T[i,j]` for local thresholding must be `adib`, given by the formula below.  This formula is from the paper *Adaptive document image binarization* by Sauvola and PietikaKinen, 2000.
+>- The value of `T` for global thresholding must be the `median` of all pixels
+>- The value of `T[i,j]` for local thresholding must be `adib`, given by the formula below.  This formula is from the paper *Adaptive document image binarization* by Sauvola and PietikaKinen, 2000.
 
 ![Image Binarization](formula.jpg)
 
@@ -104,7 +100,6 @@ Each image is encoded as a matrix of pixel values.  Internally you can represent
 > Note that every pixel value is separated by a **single** whitespace.  There should not be any trailing whitespaces.
 
 ## Submission and Grading
----
 
 Your submission will be tested and graded by an autograder, for this reason it cannot be stressed enough that your program must *exactly* follow the specifications for input and output upon submission.  Please use `main.cpp ` as the single name for your program.  We expect you to design your own **functions** and **classes** to model this problem, and all should be within the same file.  Your program will be compiled with the following line:
 
@@ -112,8 +107,8 @@ Your submission will be tested and graded by an autograder, for this reason it c
 $ g++ -std=c++11 -Wall main.cpp -o prog
 ```
 
-> For all your calculations, you are required to use `double` as the default datatype for the pixels and the terms in all formulas, this is necessary to obtain a final image consistent with the autograder.
+> You are required to use `double` as the default datatype for the pixels and the terms in all formulas, this is necessary to obtain a final image consistent with the autograder.
 
 To submit your solution to Gradescope, simply select `main.cpp` and use the `drag and drop` option.
 
-> You must be reminded that students caught cheating or plagiarizing will receive `no credit`. Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
+> :heavy_exclamation_mark: You must be reminded that students caught cheating or plagiarizing will receive `no credit`. Additional actions, including a failing grade in the class or referring the case for disciplinary action, may also be taken.
