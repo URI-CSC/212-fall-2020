@@ -80,7 +80,7 @@ $ ./binarizer local cover.img cover_loc_15.img 15
 >- The value of `T` for global thresholding must be the `median` of all pixels
 >- The value of `T[i,j]` for local thresholding must be `adib`, given by the formula below.  This formula is from the paper *Adaptive document image binarization* by Sauvola and PietikaKinen, 2000.
 
-![Image Binarization](formula.jpg)
+![Image Binarization](formula.png)
 
 ### Image file format
 
