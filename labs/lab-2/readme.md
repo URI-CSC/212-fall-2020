@@ -1,4 +1,4 @@
- # Lab 02: IDE Intro, Function Runtime Timing
+ # Lab 2: IDE Intro, Function Runtime Timing
 
  Welcome to the first Data Structures Lab of Fall 2020! The goal of this lab will be to set up a functional environment and familiarize yourself with the differences in runtime for various functions and provide a basis for the study of various concepts of study in 212. **Be sure to read and follow all instructions unless otherwise specified. Record your answers to the questions in a text document named lab-01.txt** You'll find the table of contents for this lab below.
 
