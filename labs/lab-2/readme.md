@@ -151,9 +151,9 @@ These IDEs may require more effort to learn and may seem less user-friendly at t
  ```c++
  int main(int argc, char**argv) {
      if (argc != 3) {
-         std::cout << "Usage: ./euler <n <alg\n";
-         std::cout << "\t<n\tn-th term to be calculated\n";
-         std::cout << "\t<alg\talgorithm to be used (euler1 or euler2)\n";
+         std::cout << "Usage: ./euler <n> <alg>\n";
+         std::cout << "\t<n>\tn-th term to be calculated\n";
+         std::cout << "\t<alg>\talgorithm to be used (euler1 or euler2)\n";
          return 0;
          
      }
@@ -216,9 +216,9 @@ These IDEs may require more effort to learn and may seem less user-friendly at t
  ```c++
  int main(int argc, char**argv) {
      if (argc != 3) {
-         std::cout << "Usage: ./euler <n <alg\n";
-         std::cout << "\t<n\tn-th term to be calculated\n";
-         std::cout << "\t<alg\talgorithm to be used (euler1 or euler2)\n";
+         std::cout << "Usage: ./euler <n> <alg>\n";
+         std::cout << "\t<n>\tn-th term to be calculated\n";
+         std::cout << "\t<alg>\talgorithm to be used (euler1 or euler2)\n";
          return 0;
      }
  
@@ -321,9 +321,9 @@ These IDEs may require more effort to learn and may seem less user-friendly at t
  ```c++
  int main(int argc, char**argv) {
      if (argc != 3) {
-         std::cout << "Usage: ./fib <n <alg\n";
-         std::cout << "\t<n\tn-th term to be calculated\n";
-         std::cout << "\t<alg\talgorithm to be used (fib_r or fib_i)\n";
+         std::cout << "Usage: ./fib <n> <alg>\n";
+         std::cout << "\t<n>\tn-th term to be calculated\n";
+         std::cout << "\t<alg>\talgorithm to be used (fib_r or fib_i)\n";
          return 0;
          
      }
@@ -380,9 +380,9 @@ These IDEs may require more effort to learn and may seem less user-friendly at t
  ```c++
  int main(int argc, char**argv) {
      if (argc != 3) {
-         std::cout << "Usage: ./fib <n <alg\n";
-         std::cout << "\t<n\tn-th term to be calculated\n";
-         std::cout << "\t<alg\talgorithm to be used (fib_r or fib_i)\n";
+         std::cout << "Usage: ./fib <n> <alg>\n";
+         std::cout << "\t<n>\tn-th term to be calculated\n";
+         std::cout << "\t<alg>\talgorithm to be used (fib_r or fib_i)\n";
          return 0;
      }
  
@@ -439,7 +439,7 @@ The 'Max Subsequence Sum' problem is the task of finding a contiguous subsequenc
  				thisSum += a[k];
  			}
  
- 			if (thisSum  maxSum) {
+ 			if (thisSum > maxSum) {
  				maxSum = thisSum;
  			}
  		}
@@ -458,7 +458,7 @@ The 'Max Subsequence Sum' problem is the task of finding a contiguous subsequenc
  		for (int j = i; j < a.size(); ++j) {
  			thisSum += a[j];
  
- 			if (thisSum  maxSum) {
+ 			if (thisSum > maxSum) {
  				maxSum = thisSum;
  			}
  		}
@@ -484,7 +484,7 @@ The 'Max Subsequence Sum' problem is the task of finding a contiguous subsequenc
              min_index = i;
          }
          
-         if(sum - min_sum  max_sum){
+         if(sum - min_sum > max_sum){
              max_sum = sum - min_sum;
              max_start = min_index + 1;
              max_end = i + 1;
