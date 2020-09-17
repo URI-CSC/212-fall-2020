@@ -514,6 +514,34 @@ The 'Max Subsequence Sum' problem is the task of finding a contiguous subsequenc
  }
  ```
 
+Here is an updated 'time_func' function for use with these functions. Each time 'time_func' is called in main, it will add a new value to the vector prior to timing it. The result is there will always be 'n' elements in the vector where 'n' is the value of 'i' in main();
+
+```c++
+float time_func(uint16_t n, const char *name) {
+    uint64_t val;
+    unsigned long c_start, c_end;
+    // 'static' makes it so this vector is "shared" amongst all invocations of this function
+    static std::vector<int> int_vector;
+    // Add a random number between -20 20 to the vector
+    if(n > 0){
+        int_vector.push_back(rand() % 41 - 20);
+    }
+    
+    if(! strcmp(name, "maxsubsum1")){
+        c_start = std::clock();
+        val = MaxSubSum1(int_vector);
+        c_end = std::clock();
+    }
+    else{
+        std::cout << "Invalid function call" << std::endl;
+    }
+    float output = 1.0 * (c_end - c_start) / CLOCKS_PER_SEC;
+    return output;
+}
+```
+
+
+
  :white_check_mark: Question 10. Modify again your timing code to work for each of these functions, and graph them on https://chart-studio.plot.ly/create/#/. Do your graphs match what you expected?
 
  # What to submit
