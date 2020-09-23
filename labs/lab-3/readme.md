@@ -189,7 +189,7 @@ void Swap(std::vector<int> & vec, int indexA, int indexB) {
 }
 
 ```
-:white_check_mark:Question 4: What is the run-time of the BubbleSort() function above?
+:white_check_mark:Question 4: What is the Big-O for the BubbleSort() function above?
 
 :white_check_mark:Question 5: Could this run-time be improved at all without changing the strategy?
 
@@ -273,4 +273,4 @@ for (i=0; i < (length - 1);i++) {
 
 ## [6. Submission](#1-introduction)
 
-You will submit your lab-3.cpp file that contains your solution to all questions to Gradescope.
+You will submit your lab-3.cpp file that contains your code solutions & answers.txt that contains your answers to all questions to Gradescope.
