@@ -27,7 +27,7 @@ The algorithm below should be followed in your implementation.  This is not the 
 > We **strongly suggest** you to trace this algorithm on paper using a small example (e.g. a 4 x 4 grid) until you fully understand how it works, before starting to code.
 
 ```text
-create empty dynamic array A
+create empty dynamic array `A`
 mark cell [0,0] as visited
 insert cell [0,0] at the end of `A`
 while `A` is not empty
