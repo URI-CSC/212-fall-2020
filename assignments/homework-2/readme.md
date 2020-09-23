@@ -29,15 +29,16 @@ The algorithm below should be followed in your implementation.  This is not the 
 ```text
 create empty dynamic array A
 mark cell [0,0] as visited
-insert cell [0,0] at the end of A
-while A is not empty
-    current <- remove last element from A
-    if current has neighbors not visited yet
-        insert current at the end of A
-        neigh <- pick a random neighbor not visited yet
-        remove the wall between current and neigh
-        mark neigh as visited
-        insert neigh at the end of A
+insert cell [0,0] at the end of `A`
+while `A` is not empty
+    `current` <- remove last element from `A`
+    `neighbors` <- `current`'s neighbors not visited yet
+    if `neighbors` is not empty
+        insert `current` at the end of `A`
+        `neigh` <- pick a random neighbor from `neighbors`
+        remove the wall between `current` and `neigh`
+        mark `neigh` as visited
+        insert `neigh` at the end of `A`
     endif
 endwhile
 ```
