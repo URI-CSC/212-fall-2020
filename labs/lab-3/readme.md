@@ -268,7 +268,7 @@ for (i=0; i < (length - 1);i++) {
 }
 ```
 
-:white_check_mark: Question 9: Implement a function ```InsertionSort(double &arr, bool reverse);``` that will execute Selection sort when argument reverse is false. When reverse is true it should produce a reverse sorted array (using the same principles as selection sort).
+:white_check_mark: Question 9: Implement a function ```selectionSort(double &arr, bool reverse);``` that will execute Selection sort when argument reverse is false. When reverse is true it should produce a reverse sorted array (using the same principles as selection sort).
 
 
 ## [6. Submission](#1-introduction)
