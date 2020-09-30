@@ -27,7 +27,7 @@ We'll start with a brief introduction to Linked Lists & a brief description of t
 
 Linked Lists are your first introduction to a dynamically resizing data structure that does **not** involve a copy operation. A Linked List is only ever as large as it needs to be. Unlike an array, data does not get stored directly into any primitive storage container. Instead, we utilize a second concept called the `Node`. Each `Node` contains the data it is storing, as well as a pointer(s) to neighboring nodes, with the amount of pointers depending on the type of Linked List being implemented. This class is meant to be very simple; each `Node` object holds data and pointer(s) to other `Node` objects. Aside from constructors, getters & setters are all you need to add to the `Node` class.
 
-![image](.\images\node.png)
+![image](./images/node.png)
 
 ### The Linked List Class
 
