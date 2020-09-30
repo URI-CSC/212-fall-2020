@@ -1,4 +1,4 @@
-# Lab 04: Linked Lists
+# Lab 4: Linked Lists
 
 ## 1. Introduction 
 Today you will implement a singly-linked list as discussed during this week's lecture. 
