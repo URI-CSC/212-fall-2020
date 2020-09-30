@@ -116,7 +116,7 @@ To begin our journey of fully understanding the inner-workings of linked lists, 
 
 :white_check_mark:Question 8. What is the condition to use in a while loop that will get us to the correct location to perform insertion?
 
-### delete
+### remove
 
 ![image](./images/linked-list-deletion.png)
 
@@ -134,7 +134,7 @@ Your task is to create both a LinkedList class that utilizes a Node class that s
   - Adds an integer to the end of the list
 - insert
   - Adds an integer to the list at a specific index
-- delete
+- remove
   - Searches for & removes a specific element in the list
 - contains
   - Returns true if the given value exists in the list. False otherwise.
@@ -150,7 +150,7 @@ You should submit the following files:
 
 - linked-list.h
 - linked-list.cpp
-- node.hp
+- node.h
 - node.cpp
 - main.cpp
 - answers.txt (this file contains any answers to non-coding questions in this lab)
