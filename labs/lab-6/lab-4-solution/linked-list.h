@@ -10,8 +10,6 @@ class LinkedList{
     public:
         LinkedList();
         ~LinkedList();
-        LinkedList(int data);
-        LinkedList(std::vector<int> vec);
 
         void push_front(int data);
         void push_back(int data);
