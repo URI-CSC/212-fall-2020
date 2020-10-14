@@ -85,6 +85,7 @@ Output : 1 2 3
          2 3 1
          3 2 1
 ```
+Note: There are many ways to generate all unordered permutations of a given set. Your output does *not* need to match this example exactly.
 
 ## 4. Fractals
 
