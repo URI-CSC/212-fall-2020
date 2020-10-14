@@ -12,29 +12,6 @@ LinkedList::~LinkedList(){
     }
 }
 
-LinkedList::LinkedList(int data){
-    this->head = new Node(data);
-    this->size = 1;
-}
-
-LinkedList::LinkedList(std::vector<int> vec){
-    if(vec.size() == 0){
-        this->head = nullptr;
-        this->size = 0;
-    }else{
-        this->head = new Node(vec[0]);
-        Node* temp = this->head;
-
-        for(int i = 1; i < vec.size(); i++){
-            temp->next = new Node(vec[i]);
-            temp = temp->next;
-            // ->    de-reference + dot operator
-            //temp = (*temp).next;
-        }
-    }
-    this->size = vec.size();
-}
-
 void LinkedList::push_front(int data){
     if(this->head == nullptr){
         this->head = new Node(data);
