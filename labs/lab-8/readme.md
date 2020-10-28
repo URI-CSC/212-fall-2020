@@ -53,9 +53,9 @@ int main() {
         return 1;
     }
     while(std::getline(table, line)){           // 3. get a line of data from table, store in 'line'
-		while(std::getline(line, entry, ',')){  // 4. loop each "column" in 'line'. It will be stored into 'entry'
-    
-		}
+	while(std::getline(line, entry, ',')){  // 4. loop each "column" in 'line'. It will be stored into 'entry'
+
+	}
     }    
     table.close();                                  // 5. Close the file
     // ...
