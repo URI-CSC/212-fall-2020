@@ -131,4 +131,4 @@ Create a text file called lab-8.txt and provide the answers to the following que
 
 ## 6. Submission
 
-You will submit your lab-08.cpp and lab-8.txt files to Gradescope and include any group members you worked with in your submission. If working in a group, only one person needs to submit, but it is recommended that you complete your own local version of the lab for your own benefit.
+You will submit your lab-8.cpp and lab-8.txt files to Gradescope.
