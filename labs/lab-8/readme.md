@@ -43,6 +43,8 @@ To handle the commas, we can use an overloaded version of ```std::getline()```. 
 ```c++
 #include <iostream>
 #include <fstream>
+#include <sstream>
+
 int main() {
     std::string line;
     std::string entry;
@@ -53,7 +55,8 @@ int main() {
         return 1;
     }
     while(std::getline(table, line)){           // 3. get a line of data from table, store in 'line'
-	while(std::getline(line, entry, ',')){  // 4. loop each "column" in 'line'. It will be stored into 'entry'
+    	std::stringstream ss(line);
+	while(std::getline(ss, entry, ',')){  // 4. loop each "column" in 'line'. It will be stored into 'entry'
 
 	}
     }    
