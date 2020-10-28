@@ -103,12 +103,12 @@ int main(){
     }
 
     //Test Case 3:
-    if (countries.size() != 178){
+    if (countries.size() != 749){
         std::cout << "Test Case 3: Failed" << std::endl;
         std::cout << "Size of set incorrect. Check your insertion" << std::endl;
         return 1;
     }
-    if (cases.size() != 248){
+    if (cases.size() != 563){
         std::cout << "Test Case 3: Failed" << std::endl;
         std::cout << "Size of map incorrect. Check your insertion" << std::endl;
         return 1;
