@@ -35,11 +35,11 @@ int main(){
 
     //Space for custom test cases:
     
-
+    
 
     //Test Case 1
 
-    if (!inSet(countries, "Afghanistan")){
+        if (!inSet(countries, "Afghanistan")){
         std::cout << "Test Case 1: Failed" << std::endl;
         std::cout << "Either country is not in set or inSet is incorrect." << std::endl;
         return 1;
@@ -71,9 +71,9 @@ int main(){
     }
 
     //Test Case 2:
-    if (!inMap(cases, "US")){
+    if (!inMap(cases, "Zimbabwe")){
         std::cout << "Test Case 2: Failed" << std::endl;
-        std::cout << "US not in map or inMap is incorrect." << std::endl;
+        std::cout << "Zimbabwe not in map or inMap is incorrect." << std::endl;
         return 1;
     }
     if (!inMap(cases, "Greenland")){
@@ -96,19 +96,20 @@ int main(){
         std::cout << "A country that should not be in the map was inserted." << std::endl;
         return 1;
     }
-    if (inMap(cases, "Denmark")){
+    if (inMap(cases, "US")){
         std::cout << "Test Case 2: Failed" << std::endl;
         std::cout << "A country that should not be in the map was inserted." << std::endl;
         return 1;
     }
 
     //Test Case 3:
-    if (countries.size() != 749){
+    if (countries.size() != 190){
         std::cout << "Test Case 3: Failed" << std::endl;
         std::cout << "Size of set incorrect. Check your insertion" << std::endl;
         return 1;
     }
-    if (cases.size() != 563){
+
+    if (cases.size() != 729){
         std::cout << "Test Case 3: Failed" << std::endl;
         std::cout << "Size of map incorrect. Check your insertion" << std::endl;
         return 1;
