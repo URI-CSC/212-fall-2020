@@ -55,10 +55,10 @@ int main() {
         return 1;
     }
     while(std::getline(table, line)){           // 3. get a line of data from table, store in 'line'
-    	std::stringstream ss(line);
-	while(std::getline(ss, entry, ',')){  // 4. loop each "column" in 'line'. It will be stored into 'entry'
-
-	}
+	std::stringstream streamline(line);
+	while(std::getline(streamline, entry, ',')){  // 4. loop each "column" in 'line'. It will be stored into 'entry'
+	    std::cout << entry << std::endl;
+    	}
     }    
     table.close();                                  // 5. Close the file
     // ...
