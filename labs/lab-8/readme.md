@@ -15,7 +15,7 @@ Here are the steps required for handling a file for input:
 
 Example of using ifstream:
 
-```
+```c++
 #include <iostream>
 #include <fstream>
 int main() {
@@ -66,7 +66,7 @@ int main() {
 
 The reason for being called a "set" comes directly from set theory, a branch of mathematics, in which a set is a collection of distinct objects. In other words, each element that could be in the set is either in the set or not in the set, there is no "amount" associated with a given element. There are a myriad of operations that you can perform on a set. Look at the [set reference](http://en.cppreference.com/w/cpp/container/set) page to familiarize yourself with the basic operations. 
 
-```
+```c++
 #include <set>
 #include <string>
 
@@ -87,7 +87,7 @@ Maps are similar to sets, in that each contains a number of unique elements that
 
 Here is an example of maps in action:
 
-```
+```c++
 #include <iostream>
 #include <map>
 
