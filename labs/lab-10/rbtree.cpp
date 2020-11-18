@@ -111,11 +111,11 @@ bool RBTree::search(int data, RBTNode* root){
     }
 }
 
-RBTNode* RBTree::rotateLeft(RBTNode* root){
+RBTNode* RBTree::rotateLeft(RBTNode* node){
 
 }
 
-RBTNode* RBTree::rotateRight(RBTNode* root){
+RBTNode* RBTree::rotateRight(RBTNode* node){
 
 }
 
