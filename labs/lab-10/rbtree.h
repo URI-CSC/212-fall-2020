@@ -53,8 +53,8 @@ class RBTree
         void destroy(RBTNode* root);
         bool search(int data, RBTNode* root);
 
-        RBTNode* rotateLeft(RBTNode* root);
-        RBTNode* rotateRight(RBTNode* root);
+        RBTNode* rotateLeft(RBTNode* node);
+        RBTNode* rotateRight(RBTNode* node);
         
         bool isRed(RBTNode* node);
 
