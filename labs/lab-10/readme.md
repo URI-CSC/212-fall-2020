@@ -49,7 +49,7 @@ If R >= (L + 2) then rotate left.
 **Example of Rotate Left Function**
 
 ```C++
-RBTNode* RBTree::rotateLeft(RBTNode* root){
+RBTNode* RBTree::rotateLeft(RBTNode* node){
     RBTNode* p = node->right;
     node->right = node->right->left;
     p->left = node;
