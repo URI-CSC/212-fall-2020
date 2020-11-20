@@ -22,7 +22,7 @@ class RBTNode
         RBTNode* left;
         RBTNode* right;
 
-        void swapColor() {red = !red;}
+        void invertColor() {red = !red;}
     public:
         RBTNode();
         RBTNode(int data);
