@@ -32,8 +32,8 @@ void AdjMatrix::addEdge(unsigned int source, unsigned int destination, unsigned 
 
     // Add columns to every row if we need to
     for(unsigned int i = 0; i < this->adjMatrix.size(); i++){
-        while(adjMatrix[i].size() < this->adjMatrix.size()){
-            adjMatrix[i].push_back(0);
+        while(this->adjMatrix[i].size() < this->adjMatrix.size()){
+            this->adjMatrix[i].push_back(0);
         }
     }
 
