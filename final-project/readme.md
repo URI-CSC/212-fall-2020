@@ -4,9 +4,9 @@ Final Projects (CSC 212 -- Fall 2020)
 ## Schedule
 Each group will present for `12` minutes.  Three sessions will be used to accomodate all teams:
 
-- Lab 1   => 8 groups
-- Lab 2   => 8 groups
-- Lecture => 5 groups
+- Lab 1 (Dec 9th)    => 8 groups
+- Lab 2 (Dec 11th)   => 8 groups
+- Lecture (Dec 14th) => 5 groups
 
 | Project | Team | Presentation |
 | --- | --- | --- |
