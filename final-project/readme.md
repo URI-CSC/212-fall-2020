@@ -7,7 +7,7 @@ Each group will present for `12` minutes.  Three sessions will be used to accomo
 ```
 - Lab 1   (W 12/09)  =>  8 groups
 - Lab 2   (F 12/11)  =>  8 groups
-- Lecture (F 12/14)  =>  5 groups
+- Lecture (M 12/14)  =>  5 groups
 ```
 
 | Project | Team | Presentation |
