@@ -32,7 +32,7 @@ Each group will present for `12` minutes.  Three sessions will be used to accomo
 | Convex Hull | Kang L, Samuel M, Connor A | F 10:55 |
 | B-Trees | Karla G, Ryan B, John B | F 11:08 |
 | B-Trees | Ben J, James M, John M | F 11:21 |
-| K-D Trees | Adam C | F 11:34 |
+| K-D Trees | Adam C, Peter F | F 11:34 |
 
 <br>
 
